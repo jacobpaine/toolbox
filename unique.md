@@ -15,7 +15,7 @@ Return all unique elements in an array.
 
 Filter can split the code into three parts. Each individual item, the index of that item, and the entire array. This code only uses the item and the index.
 
-The trick here is in indexOf. This method, indexOf returns only THE FIRST instance of the item. So, here's an array.
+The trick here is in indexOf. This method, indexOf returns only THE FIRST instance of t he item. So, here's an array.
 
 ```
 let array = ['a', 'b', 'c', 'a']
