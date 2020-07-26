@@ -34,7 +34,7 @@ For arr[2]:
 
 For arr[3]:
 `['a', 'b', 'c', 'a'].indexOf('a') === 3` FALSE!
-
+    
 Wait, huh? .indexOf looks for the _FIRST_ instance of 'a' (position 0 of arr). You could think of indexOf as firstIndexOf.
 
-So when the test passes, the element then goes into the array, and every element in the final array is unique.
+So when the test passes, the element then goes into the array. Every element in the final array is unique, because we check every element in the array and if that element's index is the same as the first occurance of it.
