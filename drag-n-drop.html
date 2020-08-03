@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .example-parent {
+        border: 2px solid #dfa612;
+        color: black;
+        display: flex;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      .example-origin {
+        flex-basis: 100%;
+        flex-grow: 1;
+        padding: 10px;
+      }
+
+      .example-draggable {
+        background-color: #4aae9b;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .example-dropzone {
+        background-color: #6db65b;
+        flex-basis: 100%;
+        flex-grow: 1;
+        padding: 10px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="example-parent">
+      <h1>To-do list</h1>
+      <div class="example-origin">
+        To-do
+        <div
+          id="draggable-1"
+          class="example-draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          thing 1
+        </div>
+        <div
+          id="draggable-2"
+          class="example-draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          thing 2
+        </div>
+        <div
+          id="draggable-3"
+          class="example-draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          thing 3
+        </div>
+        <div
+          id="draggable-4"
+          class="example-draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          thing 4
+        </div>
+      </div>
+
+      <div
+        class="example-dropzone"
+        ondragover="onDragOver(event);"
+        ondrop="onDrop(event);"
+      >
+        Done
+      </div>
+    </div>
+    <script src="drag-n-drop.js"></script>
+  </body>
+</html>
