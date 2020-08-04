@@ -66,3 +66,36 @@ const byLocale = (a, b) => {
   return a.localeCompare(b);
 };
 console.info(somePhrasesAboutTea.sort(byLocale));
+
+// Last, for now, is that you can sort and array of objects.
+
+var items = [
+  { name: "Maggie", item: "shell", value: 1 },
+  { name: "Milly", item: "star", value: 5 },
+  { name: "Molly", item: "crab", value: 0 },
+  { name: "May", item: "stone", value: null },
+];
+
+// sort by value
+const objectByValue = (a, b) => {
+  return a.value - b.value;
+};
+items.sort(objectByValue(items));
+
+// sort by name 
+// this example from the MDN docs:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+items.sort(function(a,b){
+  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return -1;
+  }
+
+  if (nameA > nameB) {
+    return 1;
+  }
+
+  // names must be equal
+  return 0;
+});
