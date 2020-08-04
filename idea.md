@@ -6,12 +6,10 @@ Arrays
 .reduce
 .filter
 .map
-.sort
 
 Objects
 this
 for..in
 delete
 
-Include at least 3 alternative possible uses. 
-
+Include at least 3 alternative possible uses.
